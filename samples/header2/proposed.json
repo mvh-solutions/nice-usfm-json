@@ -1,0 +1,169 @@
+{
+  "usx": {
+    "version": "3.0",
+    "children": [
+      {
+        "book": {
+          "code": "MRK",
+          "style": "id",
+          "text": "41MRKGNT92.SFM, Good News Translation, June 2003"
+        }
+      },
+      {
+        "para": {
+          "style": "h",
+          "text": "John"
+        }
+      },
+      {
+        "para": {
+          "style": "toc1",
+          "text": "The Gospel according to John"
+        }
+      },
+      {
+        "para": {
+          "style": "toc2",
+          "text": "John"
+        }
+      },
+      {
+        "para": {
+          "style": "mt2",
+          "text": "The Gospel"
+        }
+      },
+      {
+        "para": {
+          "style": "mt3",
+          "text": "according to"
+        }
+      },
+      {
+        "para": {
+          "style": "mt1",
+          "text": "JOHN"
+        }
+      },
+      {
+        "para": {
+          "style": "ip",
+          "children": [
+            "The two endings to the Gospel, which are enclosed in brackets, are regarded as written by someone other than the author of ",
+            {
+              "char": {
+                "style": "bk",
+                "text": "Mark"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "para": {
+          "style": "iot",
+          "text": "Outline of Contents"
+        }
+      },
+      {
+        "para": {
+          "style": "io1",
+          "children": [
+            "The beginning of the gospel ",
+            {
+              "char": {
+                "style": "ior",
+                "text": "(1.1-13)"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "para": {
+          "style": "io1",
+          "children": [
+            "Jesus' public ministry in Galilee ",
+            {
+              "char": {
+                "style": "ior",
+                "text": "(1.14\u20139.50)"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "para": {
+          "style": "io1",
+          "children": [
+            "From Galilee to Jerusalem ",
+            {
+              "char": {
+                "style": "ior",
+                "text": "(10.1-52)"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "chapter": {
+          "number": "1",
+          "style": "c",
+          "sid": "MRK 1"
+        }
+      },
+      {
+        "para": {
+          "style": "ms",
+          "text": "BOOK ONE"
+        }
+      },
+      {
+        "para": {
+          "style": "mr",
+          "text": "(Psalms 1\u201341)"
+        }
+      },
+      {
+        "para": {
+          "style": "p",
+          "children": [
+            {
+              "verse": {
+                "number": "1",
+                "style": "v",
+                "sid": "MRK 1:1"
+              }
+            },
+            "the first verse ",
+            {
+              "verse": {
+                "eid": "MRK 1:1"
+              }
+            },
+            {
+              "verse": {
+                "number": "2",
+                "style": "v",
+                "sid": "MRK 1:2"
+              }
+            },
+            "the second verse",
+            {
+              "verse": {
+                "eid": "MRK 1:2"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "chapter": {
+          "eid": "MRK 1"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "usx": {
+    "version": "3.0",
+    "children": [
+      {
+        "book": {
+          "code": "GEN",
+          "style": "id"
+        }
+      },
+      {
+        "chapter": {
+          "number": "1",
+          "style": "c",
+          "sid": "GEN 1"
+        }
+      },
+      {
+        "para": {
+          "style": "p",
+          "children": [
+            {
+              "verse": {
+                "number": "1",
+                "style": "v",
+                "sid": "GEN 1:1"
+              }
+            },
+            "the first verse ",
+            {
+              "verse": {
+                "eid": "GEN 1:1"
+              }
+            },
+            {
+              "verse": {
+                "number": "2",
+                "style": "v",
+                "sid": "GEN 1:2"
+              }
+            },
+            "the second verse ",
+            {
+              "char": {
+                "style": "w",
+                "x-myattr": "metadata",
+                "text": "gracious"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "para": {
+          "style": "q1",
+          "vid": "GEN 1:2",
+          "text": "\u201cSomeone is shouting in the desert,"
+        }
+      },
+      {
+        "para": {
+          "style": "q2",
+          "vid": "GEN 1:2",
+          "text": "\u2018Prepare a road for the Lord;"
+        }
+      },
+      {
+        "para": {
+          "style": "q2",
+          "vid": "GEN 1:2",
+          "text": "make a straight path for him to travel!\u2019 \u201d"
+        }
+      },
+      {
+        "para": {
+          "style": "s",
+          "vid": "GEN 1:2",
+          "children": [
+            {
+              "char": {
+                "style": "jmp",
+                "link-id": "article-john_the_baptist"
+              }
+            },
+            "John the Baptist"
+          ]
+        }
+      },
+      {
+        "para": {
+          "style": "p",
+          "vid": "GEN 1:2",
+          "children": [
+            "John is sometimes called...",
+            {
+              "verse": {
+                "eid": "GEN 1:2"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "chapter": {
+          "eid": "GEN 1"
+        }
+      }
+    ]
+  }
+}

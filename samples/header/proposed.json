@@ -1,0 +1,109 @@
+{
+  "usx": {
+    "version": "3.0",
+    "children": [
+      {
+        "book": {
+          "code": "MRK",
+          "style": "id",
+          "text": "The Gospel of Mark"
+        }
+      },
+      {
+        "para": {
+          "style": "ide",
+          "text": "UTF-8"
+        }
+      },
+      {
+        "para": {
+          "style": "usfm",
+          "text": "3.0"
+        }
+      },
+      {
+        "para": {
+          "style": "h",
+          "text": "Mark"
+        }
+      },
+      {
+        "para": {
+          "style": "mt2",
+          "text": "The Gospel according to"
+        }
+      },
+      {
+        "para": {
+          "style": "mt1",
+          "text": "MARK"
+        }
+      },
+      {
+        "para": {
+          "style": "is",
+          "text": "Introduction"
+        }
+      },
+      {
+        "para": {
+          "style": "ip",
+          "children": [
+            {
+              "char": {
+                "style": "bk",
+                "text": "The Gospel according to Mark"
+              }
+            },
+            " begins with the statement..."
+          ]
+        }
+      },
+      {
+        "chapter": {
+          "number": "1",
+          "style": "c",
+          "sid": "MRK 1"
+        }
+      },
+      {
+        "para": {
+          "style": "p",
+          "children": [
+            {
+              "verse": {
+                "number": "1",
+                "style": "v",
+                "sid": "MRK 1:1"
+              }
+            },
+            "the first verse ",
+            {
+              "verse": {
+                "eid": "MRK 1:1"
+              }
+            },
+            {
+              "verse": {
+                "number": "2",
+                "style": "v",
+                "sid": "MRK 1:2"
+              }
+            },
+            "the second verse",
+            {
+              "verse": {
+                "eid": "MRK 1:2"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "chapter": {
+          "eid": "MRK 1"
+        }
+      }
+    ]
+  }
+}
