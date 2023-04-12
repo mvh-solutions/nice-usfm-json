@@ -10,7 +10,7 @@ def usx_to_json(input_usx_elmt):
     dict_out = {}
     dict_out[key]  = dict(input_usx_elmt.attrib)
     if input_usx_elmt.text and input_usx_elmt.text.strip() != "":
-        text = input_usx_elmt.text
+        text = input_usx_elmt.text.strip()
     children = input_usx_elmt.getchildren() 
     if len(children)>0:
         dict_out[key]['children'] = []
