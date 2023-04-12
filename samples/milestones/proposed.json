@@ -21,19 +21,11 @@
         },
         "the first verse ",
         {
-          "type": "verse",
-          "eid": "GEN 1:1"
-        },
-        {
           "type": "verse:v",
           "number": "2",
           "sid": "GEN 1:2"
         },
         "the second verse ",
-        {
-          "type": "verse",
-          "eid": "GEN 1:2"
-        },
         {
           "type": "verse:v",
           "number": "3",
@@ -44,20 +36,8 @@
           "sid": "qt_123",
           "who": "Pilate"
         },
-        "\u201cAre you the king of the Jews?\u201d ",
-        {
-          "type": "ms:qt-e",
-          "eid": "qt_123"
-        },
-        {
-          "type": "verse",
-          "eid": "GEN 1:3"
-        }
+        "\u201cAre you the king of the Jews?\u201d "
       ]
-    },
-    {
-      "type": "chapter",
-      "eid": "GEN 1"
     }
   ]
 }

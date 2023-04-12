@@ -56,24 +56,12 @@
         },
         "the first verse ",
         {
-          "type": "verse",
-          "eid": "MRK 1:1"
-        },
-        {
           "type": "verse:v",
           "number": "2",
           "sid": "MRK 1:2"
         },
-        "the second verse",
-        {
-          "type": "verse",
-          "eid": "MRK 1:2"
-        }
+        "the second verse"
       ]
-    },
-    {
-      "type": "chapter",
-      "eid": "MRK 1"
     }
   ]
 }

@@ -22,11 +22,15 @@ def usx_to_json(input_usx_elmt):
         if text:
             dict_out['children'].append(text)
         for child in children:
-            dict_out['children'].append(usx_to_json(child))
+            child_dict = usx_to_json(child)
+            if child_dict is not None:
+                dict_out['children'].append(child_dict)
             if child.tail and child.tail.strip() != "":
                 dict_out['children'].append(child.tail)
     elif text:
         dict_out['text'] = text
+    if "eid" in dict_out:
+        return None
     return dict_out
 
 def main():

@@ -21,24 +21,12 @@
         },
         "the first verse ",
         {
-          "type": "verse",
-          "eid": "GEN 1:1"
-        },
-        {
           "type": "verse:v",
           "number": "2",
           "sid": "GEN 1:2"
         },
-        "the second verse",
-        {
-          "type": "verse",
-          "eid": "GEN 1:2"
-        }
+        "the second verse"
       ]
-    },
-    {
-      "type": "chapter",
-      "eid": "GEN 1"
     },
     {
       "type": "chapter:c",
@@ -55,19 +43,11 @@
         },
         "the third verse ",
         {
-          "type": "verse",
-          "eid": "GEN 2:1"
-        },
-        {
           "type": "verse:v",
           "number": "2",
           "sid": "GEN 2:2"
         },
-        "the fourth verse",
-        {
-          "type": "verse",
-          "eid": "GEN 2:2"
-        }
+        "the fourth verse"
       ]
     },
     {
@@ -104,16 +84,8 @@
       "type": "para:lf",
       "vid": "GEN 2:16-22",
       "children": [
-        "This was the list of the administrators of the tribes of Israel.",
-        {
-          "type": "verse",
-          "eid": "GEN 2:16-22"
-        }
+        "This was the list of the administrators of the tribes of Israel."
       ]
-    },
-    {
-      "type": "chapter",
-      "eid": "GEN 2"
     }
   ]
 }

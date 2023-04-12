@@ -21,10 +21,6 @@
         },
         "the first verse ",
         {
-          "type": "verse",
-          "eid": "GEN 1:1"
-        },
-        {
           "type": "verse:v",
           "number": "2",
           "sid": "GEN 1:2"
@@ -67,16 +63,8 @@
       "type": "para:p",
       "vid": "GEN 1:2",
       "children": [
-        "John is sometimes called...",
-        {
-          "type": "verse",
-          "eid": "GEN 1:2"
-        }
+        "John is sometimes called..."
       ]
-    },
-    {
-      "type": "chapter",
-      "eid": "GEN 1"
     }
   ]
 }

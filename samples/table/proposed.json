@@ -21,19 +21,11 @@
         },
         "the first verse ",
         {
-          "type": "verse",
-          "eid": "GEN 1:1"
-        },
-        {
           "type": "verse:v",
           "number": "2",
           "sid": "GEN 1:2"
         },
-        "the second verse",
-        {
-          "type": "verse",
-          "eid": "GEN 1:2"
-        }
+        "the second verse"
       ]
     },
     {
@@ -131,10 +123,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "chapter",
-      "eid": "GEN 1"
     }
   ]
 }

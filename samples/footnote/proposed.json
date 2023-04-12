@@ -21,19 +21,11 @@
         },
         "the first verse ",
         {
-          "type": "verse",
-          "eid": "MAT 1:1"
-        },
-        {
           "type": "verse:v",
           "number": "2",
           "sid": "MAT 1:2"
         },
         "the second verse ",
-        {
-          "type": "verse",
-          "eid": "MAT 1:2"
-        },
         {
           "type": "verse:v",
           "number": "3",
@@ -62,24 +54,12 @@
           ]
         },
         {
-          "type": "verse",
-          "eid": "MAT 1:3"
-        },
-        {
           "type": "verse:v",
           "number": "4",
           "sid": "MAT 1:4"
         },
-        "yet another verse.",
-        {
-          "type": "verse",
-          "eid": "MAT 1:4"
-        }
+        "yet another verse."
       ]
-    },
-    {
-      "type": "chapter",
-      "eid": "MAT 1"
     }
   ]
 }

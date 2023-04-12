@@ -21,19 +21,11 @@
         },
         "the first verse ",
         {
-          "type": "verse",
-          "eid": "GEN 1:1"
-        },
-        {
           "type": "verse:v",
           "number": "2",
           "sid": "GEN 1:2"
         },
         "the second verse ",
-        {
-          "type": "verse",
-          "eid": "GEN 1:2"
-        },
         {
           "type": "verse:v",
           "number": "15",
@@ -44,16 +36,8 @@
           "type": "char:nd",
           "text": "Lord"
         },
-        ", the God of their ancestors, the God of Abraham, Isaac, and Jacob,",
-        {
-          "type": "verse",
-          "eid": "GEN 1:15"
-        }
+        ", the God of their ancestors, the God of Abraham, Isaac, and Jacob,"
       ]
-    },
-    {
-      "type": "chapter",
-      "eid": "GEN 1"
     }
   ]
 }

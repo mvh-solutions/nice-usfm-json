@@ -21,19 +21,11 @@
         },
         "the first verse ",
         {
-          "type": "verse",
-          "eid": "GEN 1:1"
-        },
-        {
           "type": "verse:v",
           "number": "2",
           "sid": "GEN 1:2"
         },
         "the second verse ",
-        {
-          "type": "verse",
-          "eid": "GEN 1:2"
-        },
         {
           "type": "verse:v",
           "number": "14",
@@ -51,16 +43,8 @@
             "'s Battles"
           ]
         },
-        "speaks of \u201c...the town of Waheb in the area of Suphah",
-        {
-          "type": "verse",
-          "eid": "GEN 1:14"
-        }
+        "speaks of \u201c...the town of Waheb in the area of Suphah"
       ]
-    },
-    {
-      "type": "chapter",
-      "eid": "GEN 1"
     }
   ]
 }

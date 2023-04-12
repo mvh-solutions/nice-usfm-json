@@ -21,24 +21,12 @@
         },
         "verse one ",
         {
-          "type": "verse",
-          "eid": "GEN 1:1"
-        },
-        {
           "type": "verse:v",
           "number": "2",
           "sid": "GEN 1:2"
         },
-        "verse two",
-        {
-          "type": "verse",
-          "eid": "GEN 1:2"
-        }
+        "verse two"
       ]
-    },
-    {
-      "type": "chapter",
-      "eid": "GEN 1"
     }
   ]
 }

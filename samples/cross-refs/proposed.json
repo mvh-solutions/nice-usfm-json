@@ -21,19 +21,11 @@
         },
         "the first verse ",
         {
-          "type": "verse",
-          "eid": "MAT 1:1"
-        },
-        {
           "type": "verse:v",
           "number": "2",
           "sid": "MAT 1:2"
         },
         "the second verse ",
-        {
-          "type": "verse",
-          "eid": "MAT 1:2"
-        },
         {
           "type": "verse:v",
           "number": "3",
@@ -55,16 +47,8 @@
             }
           ]
         },
-        "and made his home in a town named Nazareth.",
-        {
-          "type": "verse",
-          "eid": "MAT 1:3"
-        }
+        "and made his home in a town named Nazareth."
       ]
-    },
-    {
-      "type": "chapter",
-      "eid": "MAT 1"
     }
   ]
 }

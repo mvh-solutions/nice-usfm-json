@@ -21,10 +21,6 @@
         },
         "the first verse ",
         {
-          "type": "verse",
-          "eid": "GEN 1:1"
-        },
-        {
           "type": "verse:v",
           "number": "2",
           "sid": "GEN 1:2"
@@ -34,16 +30,8 @@
           "type": "char:w",
           "lemma": "grace",
           "text": "gracious"
-        },
-        {
-          "type": "verse",
-          "eid": "GEN 1:2"
         }
       ]
-    },
-    {
-      "type": "chapter",
-      "eid": "GEN 1"
     }
   ]
 }
