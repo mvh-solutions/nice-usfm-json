@@ -8,20 +8,25 @@ def usx_to_json(input_usx_elmt):
     key = input_usx_elmt.tag
     text = None
     dict_out = {}
-    dict_out[key]  = dict(input_usx_elmt.attrib)
+    attribs = dict(input_usx_elmt.attrib)
+    if "style" in attribs:
+        key = key+":"+attribs['style']
+        del attribs['style']
+    dict_out["type"]  = key
+    dict_out =  dict_out | attribs
     if input_usx_elmt.text and input_usx_elmt.text.strip() != "":
         text = input_usx_elmt.text.strip()
     children = input_usx_elmt.getchildren() 
     if len(children)>0:
-        dict_out[key]['children'] = []
+        dict_out['children'] = []
         if text:
-            dict_out[key]['children'].append(text)
+            dict_out['children'].append(text)
         for child in children:
-            dict_out[key]['children'].append(usx_to_json(child))
+            dict_out['children'].append(usx_to_json(child))
             if child.tail and child.tail.strip() != "":
-                dict_out[key]['children'].append(child.tail)
+                dict_out['children'].append(child.tail)
     elif text:
-        dict_out[key]['text'] = text
+        dict_out['text'] = text
     return dict_out
 
 def main():

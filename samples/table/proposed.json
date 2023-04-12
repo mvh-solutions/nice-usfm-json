@@ -1,191 +1,140 @@
 {
-  "usx": {
-    "version": "3.0",
-    "children": [
-      {
-        "book": {
-          "code": "GEN",
-          "style": "id"
-        }
-      },
-      {
-        "chapter": {
+  "type": "usx",
+  "version": "3.0",
+  "children": [
+    {
+      "type": "book:id",
+      "code": "GEN"
+    },
+    {
+      "type": "chapter:c",
+      "number": "1",
+      "sid": "GEN 1"
+    },
+    {
+      "type": "para:p",
+      "children": [
+        {
+          "type": "verse:v",
           "number": "1",
-          "style": "c",
-          "sid": "GEN 1"
+          "sid": "GEN 1:1"
+        },
+        "the first verse ",
+        {
+          "type": "verse",
+          "eid": "GEN 1:1"
+        },
+        {
+          "type": "verse:v",
+          "number": "2",
+          "sid": "GEN 1:2"
+        },
+        "the second verse",
+        {
+          "type": "verse",
+          "eid": "GEN 1:2"
         }
-      },
-      {
-        "para": {
-          "style": "p",
+      ]
+    },
+    {
+      "type": "para:p",
+      "children": [
+        {
+          "type": "verse:v",
+          "number": "12-83",
+          "sid": "GEN 1:12-83"
+        },
+        "They presented their offerings in the following order:"
+      ]
+    },
+    {
+      "type": "table",
+      "children": [
+        {
+          "type": "row:tr",
           "children": [
             {
-              "verse": {
-                "number": "1",
-                "style": "v",
-                "sid": "GEN 1:1"
-              }
-            },
-            "the first verse ",
-            {
-              "verse": {
-                "eid": "GEN 1:1"
-              }
+              "type": "cell:th1",
+              "align": "start",
+              "text": "Day"
             },
             {
-              "verse": {
-                "number": "2",
-                "style": "v",
-                "sid": "GEN 1:2"
-              }
+              "type": "cell:th2",
+              "align": "start",
+              "text": "Tribe"
             },
-            "the second verse",
             {
-              "verse": {
-                "eid": "GEN 1:2"
-              }
+              "type": "cell:th3",
+              "align": "start",
+              "text": "Leader"
+            }
+          ]
+        },
+        {
+          "type": "row:tr",
+          "children": [
+            {
+              "type": "cell:tcr1",
+              "align": "end",
+              "text": "1st"
+            },
+            {
+              "type": "cell:tc2",
+              "align": "start",
+              "text": "Judah"
+            },
+            {
+              "type": "cell:tc3",
+              "align": "start",
+              "text": "Nahshon son of Amminadab"
+            }
+          ]
+        },
+        {
+          "type": "row:tr",
+          "children": [
+            {
+              "type": "cell:tcr1",
+              "align": "end",
+              "text": "2nd"
+            },
+            {
+              "type": "cell:tc2",
+              "align": "start",
+              "text": "Issachar"
+            },
+            {
+              "type": "cell:tc3",
+              "align": "start",
+              "text": "Nethanel son of Zuar"
+            }
+          ]
+        },
+        {
+          "type": "row:tr",
+          "children": [
+            {
+              "type": "cell:tcr1",
+              "align": "end",
+              "text": "3rd"
+            },
+            {
+              "type": "cell:tc2",
+              "align": "start",
+              "text": "Zebulun"
+            },
+            {
+              "type": "cell:tc3",
+              "align": "start",
+              "text": "Eliab son of Helon"
             }
           ]
         }
-      },
-      {
-        "para": {
-          "style": "p",
-          "children": [
-            {
-              "verse": {
-                "number": "12-83",
-                "style": "v",
-                "sid": "GEN 1:12-83"
-              }
-            },
-            "They presented their offerings in the following order:"
-          ]
-        }
-      },
-      {
-        "table": {
-          "children": [
-            {
-              "row": {
-                "style": "tr",
-                "children": [
-                  {
-                    "cell": {
-                      "style": "th1",
-                      "align": "start",
-                      "text": "Day"
-                    }
-                  },
-                  {
-                    "cell": {
-                      "style": "th2",
-                      "align": "start",
-                      "text": "Tribe"
-                    }
-                  },
-                  {
-                    "cell": {
-                      "style": "th3",
-                      "align": "start",
-                      "text": "Leader"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "row": {
-                "style": "tr",
-                "children": [
-                  {
-                    "cell": {
-                      "style": "tcr1",
-                      "align": "end",
-                      "text": "1st"
-                    }
-                  },
-                  {
-                    "cell": {
-                      "style": "tc2",
-                      "align": "start",
-                      "text": "Judah"
-                    }
-                  },
-                  {
-                    "cell": {
-                      "style": "tc3",
-                      "align": "start",
-                      "text": "Nahshon son of Amminadab"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "row": {
-                "style": "tr",
-                "children": [
-                  {
-                    "cell": {
-                      "style": "tcr1",
-                      "align": "end",
-                      "text": "2nd"
-                    }
-                  },
-                  {
-                    "cell": {
-                      "style": "tc2",
-                      "align": "start",
-                      "text": "Issachar"
-                    }
-                  },
-                  {
-                    "cell": {
-                      "style": "tc3",
-                      "align": "start",
-                      "text": "Nethanel son of Zuar"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "row": {
-                "style": "tr",
-                "children": [
-                  {
-                    "cell": {
-                      "style": "tcr1",
-                      "align": "end",
-                      "text": "3rd"
-                    }
-                  },
-                  {
-                    "cell": {
-                      "style": "tc2",
-                      "align": "start",
-                      "text": "Zebulun"
-                    }
-                  },
-                  {
-                    "cell": {
-                      "style": "tc3",
-                      "align": "start",
-                      "text": "Eliab son of Helon"
-                    }
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      },
-      {
-        "chapter": {
-          "eid": "GEN 1"
-        }
-      }
-    ]
-  }
+      ]
+    },
+    {
+      "type": "chapter",
+      "eid": "GEN 1"
+    }
+  ]
 }

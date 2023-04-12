@@ -1,87 +1,66 @@
 {
-  "usx": {
-    "version": "3.0",
-    "children": [
-      {
-        "book": {
-          "code": "GEN",
-          "style": "id"
-        }
-      },
-      {
-        "chapter": {
+  "type": "usx",
+  "version": "3.0",
+  "children": [
+    {
+      "type": "book:id",
+      "code": "GEN"
+    },
+    {
+      "type": "chapter:c",
+      "number": "1",
+      "sid": "GEN 1"
+    },
+    {
+      "type": "para:p",
+      "children": [
+        {
+          "type": "verse:v",
           "number": "1",
-          "style": "c",
-          "sid": "GEN 1"
-        }
-      },
-      {
-        "para": {
-          "style": "p",
+          "sid": "GEN 1:1"
+        },
+        "the first verse ",
+        {
+          "type": "verse",
+          "eid": "GEN 1:1"
+        },
+        {
+          "type": "verse:v",
+          "number": "2",
+          "sid": "GEN 1:2"
+        },
+        "the second verse ",
+        {
+          "type": "verse",
+          "eid": "GEN 1:2"
+        },
+        {
+          "type": "verse:v",
+          "number": "14",
+          "sid": "GEN 1:14"
+        },
+        "That is why ",
+        {
+          "type": "char:bk",
           "children": [
+            "The Book of the",
             {
-              "verse": {
-                "number": "1",
-                "style": "v",
-                "sid": "GEN 1:1"
-              }
+              "type": "char:nd",
+              "text": "Lord"
             },
-            "the first verse ",
-            {
-              "verse": {
-                "eid": "GEN 1:1"
-              }
-            },
-            {
-              "verse": {
-                "number": "2",
-                "style": "v",
-                "sid": "GEN 1:2"
-              }
-            },
-            "the second verse ",
-            {
-              "verse": {
-                "eid": "GEN 1:2"
-              }
-            },
-            {
-              "verse": {
-                "number": "14",
-                "style": "v",
-                "sid": "GEN 1:14"
-              }
-            },
-            "That is why ",
-            {
-              "char": {
-                "style": "bk",
-                "children": [
-                  "The Book of the",
-                  {
-                    "char": {
-                      "style": "nd",
-                      "text": "Lord"
-                    }
-                  },
-                  "'s Battles"
-                ]
-              }
-            },
-            "speaks of \u201c...the town of Waheb in the area of Suphah",
-            {
-              "verse": {
-                "eid": "GEN 1:14"
-              }
-            }
+            "'s Battles"
           ]
+        },
+        "speaks of \u201c...the town of Waheb in the area of Suphah",
+        {
+          "type": "verse",
+          "eid": "GEN 1:14"
         }
-      },
-      {
-        "chapter": {
-          "eid": "GEN 1"
-        }
-      }
-    ]
-  }
+      ]
+    },
+    {
+      "type": "chapter",
+      "eid": "GEN 1"
+    }
+  ]
 }

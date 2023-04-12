@@ -1,159 +1,119 @@
 {
-  "usx": {
-    "version": "3.0",
-    "children": [
-      {
-        "book": {
-          "code": "GEN",
-          "style": "id"
-        }
-      },
-      {
-        "chapter": {
+  "type": "usx",
+  "version": "3.0",
+  "children": [
+    {
+      "type": "book:id",
+      "code": "GEN"
+    },
+    {
+      "type": "chapter:c",
+      "number": "1",
+      "sid": "GEN 1"
+    },
+    {
+      "type": "para:p",
+      "children": [
+        {
+          "type": "verse:v",
           "number": "1",
-          "style": "c",
-          "sid": "GEN 1"
-        }
-      },
-      {
-        "para": {
-          "style": "p",
-          "children": [
-            {
-              "verse": {
-                "number": "1",
-                "style": "v",
-                "sid": "GEN 1:1"
-              }
-            },
-            "the first verse ",
-            {
-              "verse": {
-                "eid": "GEN 1:1"
-              }
-            },
-            {
-              "verse": {
-                "number": "2",
-                "style": "v",
-                "sid": "GEN 1:2"
-              }
-            },
-            "the second verse",
-            {
-              "verse": {
-                "eid": "GEN 1:2"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "chapter": {
-          "eid": "GEN 1"
-        }
-      },
-      {
-        "chapter": {
+          "sid": "GEN 1:1"
+        },
+        "the first verse ",
+        {
+          "type": "verse",
+          "eid": "GEN 1:1"
+        },
+        {
+          "type": "verse:v",
           "number": "2",
-          "style": "c",
-          "sid": "GEN 2"
+          "sid": "GEN 1:2"
+        },
+        "the second verse",
+        {
+          "type": "verse",
+          "eid": "GEN 1:2"
         }
-      },
-      {
-        "para": {
-          "style": "p",
-          "children": [
-            {
-              "verse": {
-                "number": "1",
-                "style": "v",
-                "sid": "GEN 2:1"
-              }
-            },
-            "the third verse ",
-            {
-              "verse": {
-                "eid": "GEN 2:1"
-              }
-            },
-            {
-              "verse": {
-                "number": "2",
-                "style": "v",
-                "sid": "GEN 2:2"
-              }
-            },
-            "the fourth verse",
-            {
-              "verse": {
-                "eid": "GEN 2:2"
-              }
-            }
-          ]
+      ]
+    },
+    {
+      "type": "chapter",
+      "eid": "GEN 1"
+    },
+    {
+      "type": "chapter:c",
+      "number": "2",
+      "sid": "GEN 2"
+    },
+    {
+      "type": "para:p",
+      "children": [
+        {
+          "type": "verse:v",
+          "number": "1",
+          "sid": "GEN 2:1"
+        },
+        "the third verse ",
+        {
+          "type": "verse",
+          "eid": "GEN 2:1"
+        },
+        {
+          "type": "verse:v",
+          "number": "2",
+          "sid": "GEN 2:2"
+        },
+        "the fourth verse",
+        {
+          "type": "verse",
+          "eid": "GEN 2:2"
         }
-      },
-      {
-        "para": {
-          "style": "s1",
-          "text": "Administration of the Tribes of Israel"
+      ]
+    },
+    {
+      "type": "para:s1",
+      "text": "Administration of the Tribes of Israel"
+    },
+    {
+      "type": "para:lh",
+      "children": [
+        {
+          "type": "verse:v",
+          "number": "16-22",
+          "sid": "GEN 2:16-22"
+        },
+        "This is the list of the administrators of the tribes of Israel:"
+      ]
+    },
+    {
+      "type": "para:li1",
+      "vid": "GEN 2:16-22",
+      "text": "Reuben - Eliezer son of Zichri"
+    },
+    {
+      "type": "para:li1",
+      "vid": "GEN 2:16-22",
+      "text": "Simeon - Shephatiah son of Maacah"
+    },
+    {
+      "type": "para:li1",
+      "vid": "GEN 2:16-22",
+      "text": "Levi - Hashabiah son of Kemuel"
+    },
+    {
+      "type": "para:lf",
+      "vid": "GEN 2:16-22",
+      "children": [
+        "This was the list of the administrators of the tribes of Israel.",
+        {
+          "type": "verse",
+          "eid": "GEN 2:16-22"
         }
-      },
-      {
-        "para": {
-          "style": "lh",
-          "children": [
-            {
-              "verse": {
-                "number": "16-22",
-                "style": "v",
-                "sid": "GEN 2:16-22"
-              }
-            },
-            "This is the list of the administrators of the tribes of Israel:"
-          ]
-        }
-      },
-      {
-        "para": {
-          "style": "li1",
-          "vid": "GEN 2:16-22",
-          "text": "Reuben - Eliezer son of Zichri"
-        }
-      },
-      {
-        "para": {
-          "style": "li1",
-          "vid": "GEN 2:16-22",
-          "text": "Simeon - Shephatiah son of Maacah"
-        }
-      },
-      {
-        "para": {
-          "style": "li1",
-          "vid": "GEN 2:16-22",
-          "text": "Levi - Hashabiah son of Kemuel"
-        }
-      },
-      {
-        "para": {
-          "style": "lf",
-          "vid": "GEN 2:16-22",
-          "children": [
-            "This was the list of the administrators of the tribes of Israel.",
-            {
-              "verse": {
-                "eid": "GEN 2:16-22"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "chapter": {
-          "eid": "GEN 2"
-        }
-      }
-    ]
-  }
+      ]
+    },
+    {
+      "type": "chapter",
+      "eid": "GEN 2"
+    }
+  ]
 }

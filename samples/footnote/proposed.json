@@ -1,113 +1,85 @@
 {
-  "usx": {
-    "version": "3.0",
-    "children": [
-      {
-        "book": {
-          "code": "MAT",
-          "style": "id"
-        }
-      },
-      {
-        "chapter": {
+  "type": "usx",
+  "version": "3.0",
+  "children": [
+    {
+      "type": "book:id",
+      "code": "MAT"
+    },
+    {
+      "type": "chapter:c",
+      "number": "1",
+      "sid": "MAT 1"
+    },
+    {
+      "type": "para:p",
+      "children": [
+        {
+          "type": "verse:v",
           "number": "1",
-          "style": "c",
-          "sid": "MAT 1"
-        }
-      },
-      {
-        "para": {
-          "style": "p",
+          "sid": "MAT 1:1"
+        },
+        "the first verse ",
+        {
+          "type": "verse",
+          "eid": "MAT 1:1"
+        },
+        {
+          "type": "verse:v",
+          "number": "2",
+          "sid": "MAT 1:2"
+        },
+        "the second verse ",
+        {
+          "type": "verse",
+          "eid": "MAT 1:2"
+        },
+        {
+          "type": "verse:v",
+          "number": "3",
+          "sid": "MAT 1:3"
+        },
+        "This is the Good News about Jesus Christ, the Son of God. ",
+        {
+          "type": "note:f",
+          "caller": "+",
           "children": [
             {
-              "verse": {
-                "number": "1",
-                "style": "v",
-                "sid": "MAT 1:1"
-              }
-            },
-            "the first verse ",
-            {
-              "verse": {
-                "eid": "MAT 1:1"
-              }
+              "type": "char:fr",
+              "closed": "false",
+              "text": "1.1:"
             },
             {
-              "verse": {
-                "number": "2",
-                "style": "v",
-                "sid": "MAT 1:2"
-              }
-            },
-            "the second verse ",
-            {
-              "verse": {
-                "eid": "MAT 1:2"
-              }
+              "type": "char:ft",
+              "closed": "false",
+              "text": "Some manuscripts do not have"
             },
             {
-              "verse": {
-                "number": "3",
-                "style": "v",
-                "sid": "MAT 1:3"
-              }
-            },
-            "This is the Good News about Jesus Christ, the Son of God. ",
-            {
-              "note": {
-                "caller": "+",
-                "style": "f",
-                "children": [
-                  {
-                    "char": {
-                      "style": "fr",
-                      "closed": "false",
-                      "text": "1.1:"
-                    }
-                  },
-                  {
-                    "char": {
-                      "style": "ft",
-                      "closed": "false",
-                      "text": "Some manuscripts do not have"
-                    }
-                  },
-                  {
-                    "char": {
-                      "style": "fq",
-                      "closed": "false",
-                      "text": "the Son of God."
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "verse": {
-                "eid": "MAT 1:3"
-              }
-            },
-            {
-              "verse": {
-                "number": "4",
-                "style": "v",
-                "sid": "MAT 1:4"
-              }
-            },
-            "yet another verse.",
-            {
-              "verse": {
-                "eid": "MAT 1:4"
-              }
+              "type": "char:fq",
+              "closed": "false",
+              "text": "the Son of God."
             }
           ]
+        },
+        {
+          "type": "verse",
+          "eid": "MAT 1:3"
+        },
+        {
+          "type": "verse:v",
+          "number": "4",
+          "sid": "MAT 1:4"
+        },
+        "yet another verse.",
+        {
+          "type": "verse",
+          "eid": "MAT 1:4"
         }
-      },
-      {
-        "chapter": {
-          "eid": "MAT 1"
-        }
-      }
-    ]
-  }
+      ]
+    },
+    {
+      "type": "chapter",
+      "eid": "MAT 1"
+    }
+  ]
 }
