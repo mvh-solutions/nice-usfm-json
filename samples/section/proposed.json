@@ -30,7 +30,9 @@
     },
     {
       "type": "para:s",
-      "text": "A new section"
+      "children": [
+        "A new section"
+      ]
     },
     {
       "type": "para:p",

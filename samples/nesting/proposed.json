@@ -38,7 +38,9 @@
             "The Book of the",
             {
               "type": "char:nd",
-              "text": "Lord"
+              "children": [
+                "Lord"
+              ]
             },
             "'s Battles"
           ]

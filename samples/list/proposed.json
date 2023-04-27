@@ -52,7 +52,9 @@
     },
     {
       "type": "para:s1",
-      "text": "Administration of the Tribes of Israel"
+      "children": [
+        "Administration of the Tribes of Israel"
+      ]
     },
     {
       "type": "para:lh",
@@ -68,17 +70,23 @@
     {
       "type": "para:li1",
       "vid": "GEN 2:16-22",
-      "text": "Reuben - Eliezer son of Zichri"
+      "children": [
+        "Reuben - Eliezer son of Zichri"
+      ]
     },
     {
       "type": "para:li1",
       "vid": "GEN 2:16-22",
-      "text": "Simeon - Shephatiah son of Maacah"
+      "children": [
+        "Simeon - Shephatiah son of Maacah"
+      ]
     },
     {
       "type": "para:li1",
       "vid": "GEN 2:16-22",
-      "text": "Levi - Hashabiah son of Kemuel"
+      "children": [
+        "Levi - Hashabiah son of Kemuel"
+      ]
     },
     {
       "type": "para:lf",

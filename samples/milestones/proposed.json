@@ -34,7 +34,8 @@
         {
           "type": "ms:qt-s",
           "sid": "qt_123",
-          "who": "Pilate"
+          "who": "Pilate",
+          "children": []
         },
         "\u201cAre you the king of the Jews?\u201d "
       ]

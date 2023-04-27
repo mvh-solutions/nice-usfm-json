@@ -48,17 +48,23 @@
             {
               "type": "cell:th1",
               "align": "start",
-              "text": "Day"
+              "children": [
+                "Day"
+              ]
             },
             {
               "type": "cell:th2",
               "align": "start",
-              "text": "Tribe"
+              "children": [
+                "Tribe"
+              ]
             },
             {
               "type": "cell:th3",
               "align": "start",
-              "text": "Leader"
+              "children": [
+                "Leader"
+              ]
             }
           ]
         },
@@ -68,17 +74,23 @@
             {
               "type": "cell:tcr1",
               "align": "end",
-              "text": "1st"
+              "children": [
+                "1st"
+              ]
             },
             {
               "type": "cell:tc2",
               "align": "start",
-              "text": "Judah"
+              "children": [
+                "Judah"
+              ]
             },
             {
               "type": "cell:tc3",
               "align": "start",
-              "text": "Nahshon son of Amminadab"
+              "children": [
+                "Nahshon son of Amminadab"
+              ]
             }
           ]
         },
@@ -88,17 +100,23 @@
             {
               "type": "cell:tcr1",
               "align": "end",
-              "text": "2nd"
+              "children": [
+                "2nd"
+              ]
             },
             {
               "type": "cell:tc2",
               "align": "start",
-              "text": "Issachar"
+              "children": [
+                "Issachar"
+              ]
             },
             {
               "type": "cell:tc3",
               "align": "start",
-              "text": "Nethanel son of Zuar"
+              "children": [
+                "Nethanel son of Zuar"
+              ]
             }
           ]
         },
@@ -108,17 +126,23 @@
             {
               "type": "cell:tcr1",
               "align": "end",
-              "text": "3rd"
+              "children": [
+                "3rd"
+              ]
             },
             {
               "type": "cell:tc2",
               "align": "start",
-              "text": "Zebulun"
+              "children": [
+                "Zebulun"
+              ]
             },
             {
               "type": "cell:tc3",
               "align": "start",
-              "text": "Eliab son of Helon"
+              "children": [
+                "Eliab son of Helon"
+              ]
             }
           ]
         }

@@ -21,15 +21,21 @@
     },
     {
       "type": "para:mt2",
-      "text": "The Gospel"
+      "children": [
+        "The Gospel"
+      ]
     },
     {
       "type": "para:mt3",
-      "text": "according to"
+      "children": [
+        "according to"
+      ]
     },
     {
       "type": "para:mt1",
-      "text": "JOHN"
+      "children": [
+        "JOHN"
+      ]
     },
     {
       "type": "para:ip",
@@ -37,13 +43,17 @@
         "The two endings to the Gospel, which are enclosed in brackets, are regarded as written by someone other than the author of",
         {
           "type": "char:bk",
-          "text": "Mark"
+          "children": [
+            "Mark"
+          ]
         }
       ]
     },
     {
       "type": "para:iot",
-      "text": "Outline of Contents"
+      "children": [
+        "Outline of Contents"
+      ]
     },
     {
       "type": "para:io1",
@@ -51,7 +61,9 @@
         "The beginning of the gospel",
         {
           "type": "char:ior",
-          "text": "(1.1-13)"
+          "children": [
+            "(1.1-13)"
+          ]
         }
       ]
     },
@@ -61,7 +73,9 @@
         "Jesus' public ministry in Galilee",
         {
           "type": "char:ior",
-          "text": "(1.14\u20139.50)"
+          "children": [
+            "(1.14\u20139.50)"
+          ]
         }
       ]
     },
@@ -71,7 +85,9 @@
         "From Galilee to Jerusalem",
         {
           "type": "char:ior",
-          "text": "(10.1-52)"
+          "children": [
+            "(10.1-52)"
+          ]
         }
       ]
     },
@@ -82,11 +98,15 @@
     },
     {
       "type": "para:ms",
-      "text": "BOOK ONE"
+      "children": [
+        "BOOK ONE"
+      ]
     },
     {
       "type": "para:mr",
-      "text": "(Psalms 1\u201341)"
+      "children": [
+        "(Psalms 1\u201341)"
+      ]
     },
     {
       "type": "para:p",

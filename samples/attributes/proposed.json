@@ -29,7 +29,9 @@
         {
           "type": "char:w",
           "lemma": "grace",
-          "text": "gracious"
+          "children": [
+            "gracious"
+          ]
         }
       ]
     }

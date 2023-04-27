@@ -34,7 +34,9 @@
         "Tell the Israelites that I, the ",
         {
           "type": "char:nd",
-          "text": "Lord"
+          "children": [
+            "Lord"
+          ]
         },
         ", the God of their ancestors, the God of Abraham, Isaac, and Jacob,"
       ]

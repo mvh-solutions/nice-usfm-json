@@ -5,6 +5,11 @@ from lxml import etree
 VERSION_NUM = "0.0.1-alpha.1"
 SPEC_NAME = "JOUST" # for Javascript Objects for USFM Syntax Trees
 
+
+NO_NESTING = ["book:id", "chapter:c", "verse:v", "para:ide", "para:h1", "para:h2", "para:h3",
+            "para:h", "para:toc1", "para:toc2", "para:toc3", "para:toca1", "para:toca2",
+            "para:toca3", "para:usfm", "figure:fig"]
+
 def convert_usx(input_usx_elmt):
     '''Accepts an XML object of USX and returns a Dict corresponding to it.
     Traverses the children, recursively'''
@@ -20,7 +25,10 @@ def convert_usx(input_usx_elmt):
     if input_usx_elmt.text and input_usx_elmt.text.strip() != "":
         text = input_usx_elmt.text.strip()
     children = input_usx_elmt.getchildren() 
-    if len(children)>0:
+    if key in NO_NESTING:
+        if text:
+            dict_out['text'] = text
+    else:
         dict_out['children'] = []
         if text:
             dict_out['children'].append(text)
@@ -30,8 +38,6 @@ def convert_usx(input_usx_elmt):
                 dict_out['children'].append(child_dict)
             if child.tail and child.tail.strip() != "":
                 dict_out['children'].append(child.tail)
-    elif text:
-        dict_out['text'] = text
     if "eid" in dict_out:
         return None
     return dict_out

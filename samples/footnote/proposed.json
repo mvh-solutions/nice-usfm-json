@@ -39,17 +39,23 @@
             {
               "type": "char:fr",
               "closed": "false",
-              "text": "1.1:"
+              "children": [
+                "1.1:"
+              ]
             },
             {
               "type": "char:ft",
               "closed": "false",
-              "text": "Some manuscripts do not have"
+              "children": [
+                "Some manuscripts do not have"
+              ]
             },
             {
               "type": "char:fq",
               "closed": "false",
-              "text": "the Son of God."
+              "children": [
+                "the Son of God."
+              ]
             }
           ]
         },

@@ -38,12 +38,16 @@
             {
               "type": "char:xo",
               "closed": "false",
-              "text": "2.23:"
+              "children": [
+                "2.23:"
+              ]
             },
             {
               "type": "char:xt",
               "closed": "false",
-              "text": "Mrk 1.24; Luk 2.39; Jhn 1.45."
+              "children": [
+                "Mrk 1.24; Luk 2.39; Jhn 1.45."
+              ]
             }
           ]
         },

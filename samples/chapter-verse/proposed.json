@@ -19,25 +19,35 @@
         {
           "type": "char:ca",
           "status": "invalid",
-          "text": "2"
+          "children": [
+            "2"
+          ]
         }
       ]
     },
     {
       "type": "para:cp",
-      "text": "M"
+      "children": [
+        "M"
+      ]
     },
     {
       "type": "para:cd",
-      "text": "Additional deacription about the chapter"
+      "children": [
+        "Additional deacription about the chapter"
+      ]
     },
     {
       "type": "para:s1",
-      "text": "The Ancestors of Jesus Christ"
+      "children": [
+        "The Ancestors of Jesus Christ"
+      ]
     },
     {
       "type": "para:r",
-      "text": "(Luke 3.23-38)"
+      "children": [
+        "(Luke 3.23-38)"
+      ]
     },
     {
       "type": "para:p",
@@ -50,7 +60,9 @@
         },
         {
           "type": "char:vp",
-          "text": "1b"
+          "children": [
+            "1b"
+          ]
         },
         " This is the list of the ancestors of Jesus Christ, a descendant of David, who was a descendant of Abraham."
       ]
@@ -79,7 +91,9 @@
     },
     {
       "type": "para:iex",
-      "text": "Written to the Romans from Corinthus, and sent by Phebe servant of the church at Cenchrea."
+      "children": [
+        "Written to the Romans from Corinthus, and sent by Phebe servant of the church at Cenchrea."
+      ]
     },
     {
       "type": "para:p",

@@ -21,22 +21,30 @@
     },
     {
       "type": "para:mt2",
-      "text": "The Gospel according to"
+      "children": [
+        "The Gospel according to"
+      ]
     },
     {
       "type": "para:mt1",
-      "text": "MARK"
+      "children": [
+        "MARK"
+      ]
     },
     {
       "type": "para:is",
-      "text": "Introduction"
+      "children": [
+        "Introduction"
+      ]
     },
     {
       "type": "para:ip",
       "children": [
         {
           "type": "char:bk",
-          "text": "The Gospel according to Mark"
+          "children": [
+            "The Gospel according to Mark"
+          ]
         },
         " begins with the statement..."
       ]

@@ -29,24 +29,32 @@
         {
           "type": "char:w",
           "x-myattr": "metadata",
-          "text": "gracious"
+          "children": [
+            "gracious"
+          ]
         }
       ]
     },
     {
       "type": "para:q1",
       "vid": "GEN 1:2",
-      "text": "\u201cSomeone is shouting in the desert,"
+      "children": [
+        "\u201cSomeone is shouting in the desert,"
+      ]
     },
     {
       "type": "para:q2",
       "vid": "GEN 1:2",
-      "text": "\u2018Prepare a road for the Lord;"
+      "children": [
+        "\u2018Prepare a road for the Lord;"
+      ]
     },
     {
       "type": "para:q2",
       "vid": "GEN 1:2",
-      "text": "make a straight path for him to travel!\u2019 \u201d"
+      "children": [
+        "make a straight path for him to travel!\u2019 \u201d"
+      ]
     },
     {
       "type": "para:s",
@@ -54,7 +62,8 @@
       "children": [
         {
           "type": "char:jmp",
-          "link-id": "article-john_the_baptist"
+          "link-id": "article-john_the_baptist",
+          "children": []
         },
         "John the Baptist"
       ]
