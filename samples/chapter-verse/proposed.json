@@ -55,8 +55,13 @@
         {
           "type": "verse:v",
           "number": "1",
-          "altnumber": "3",
           "sid": "MAT 1:1"
+        },
+        {
+          "type": "char:va",
+          "children": [
+            "3"
+          ]
         },
         {
           "type": "char:vp",

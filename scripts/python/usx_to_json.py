@@ -15,38 +15,64 @@ def convert_usx(input_usx_elmt):
     Traverses the children, recursively'''
     key = input_usx_elmt.tag
     text = None
-    dict_out = {}
+    out_obj = {}
+    action = "append"
     attribs = dict(input_usx_elmt.attrib)
     if "style" in attribs:
         key = key+":"+attribs['style']
         del attribs['style']
-    dict_out["type"]  = key
-    dict_out =  dict_out | attribs
+    out_obj["type"]  = key
+    out_obj =  out_obj | attribs
     if input_usx_elmt.text and input_usx_elmt.text.strip() != "":
         text = input_usx_elmt.text.strip()
     children = input_usx_elmt.getchildren() 
     if key in NO_NESTING:
         if text:
-            dict_out['text'] = text
+            out_obj['text'] = text
+        if key in ["chapter:c", "verse:v"]:
+            if "altnumber" in out_obj:
+                out_obj = [out_obj]
+                out_obj.append({
+                    "type": f"char:{key[-1]}a",
+                    "children": [out_obj[0]['altnumber']]
+                    })
+                del out_obj[0]['altnumber']
+                action = "merge"
+            if "pubnumber" in out_obj:
+                if not isinstance(out_obj, list):
+                    out_obj = [out_obj]
+                out_obj.append({
+                    "type": f"para:{key[-1]}p",
+                    "children": [out_obj[0]['pubnumber']]
+                    })
+                del out_obj[0]['pubnumber']
+                action = "merge"
     else:
-        dict_out['children'] = []
+        out_obj['children'] = []
         if text:
-            dict_out['children'].append(text)
+            out_obj['children'].append(text)
         for child in children:
-            child_dict = convert_usx(child)
-            if child_dict is not None:
-                dict_out['children'].append(child_dict)
+            child_dict, what_to_do = convert_usx(child)
+            match what_to_do:
+                case "append":
+                    out_obj['children'].append(child_dict)
+                case "merge":
+                    out_obj['children'] += child_dict
+                case "ignore":
+                    pass
+                case _:
+                    pass
             if child.tail and child.tail.strip() != "":
-                dict_out['children'].append(child.tail)
-    if "eid" in dict_out:
-        return None
-    return dict_out
+                out_obj['children'].append(child.tail)
+    if "eid" in out_obj:
+        action = "ignore"
+    return out_obj, action
 
 def usx_to_json(input_usx):
     '''The core function for the process.
     input: parsed XML element for the whole USX
     output: dict object as per the JSON schema'''
-    output_json = convert_usx(input_usx)
+    output_json, _ = convert_usx(input_usx)
     output_json['type'] = SPEC_NAME
     output_json['version'] = VERSION_NUM
     return output_json
