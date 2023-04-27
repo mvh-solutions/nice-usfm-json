@@ -1,6 +1,6 @@
 {
-  "type": "usx",
-  "version": "3.0",
+  "type": "JOUST",
+  "version": "0.0.1-alpha.1",
   "children": [
     {
       "type": "book:id",

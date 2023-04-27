@@ -2,8 +2,11 @@ import argparse
 import json
 from lxml import etree
 
-def usx_to_json(input_usx_elmt):
-    '''Accepts an XML object of USX and returns a JSON corresponding to it.
+VERSION_NUM = "0.0.1-alpha.1"
+SPEC_NAME = "JOUST" # for Javascript Objects for USFM Syntax Trees
+
+def convert_usx(input_usx_elmt):
+    '''Accepts an XML object of USX and returns a Dict corresponding to it.
     Traverses the children, recursively'''
     key = input_usx_elmt.tag
     text = None
@@ -22,7 +25,7 @@ def usx_to_json(input_usx_elmt):
         if text:
             dict_out['children'].append(text)
         for child in children:
-            child_dict = usx_to_json(child)
+            child_dict = convert_usx(child)
             if child_dict is not None:
                 dict_out['children'].append(child_dict)
             if child.tail and child.tail.strip() != "":
@@ -32,6 +35,15 @@ def usx_to_json(input_usx_elmt):
     if "eid" in dict_out:
         return None
     return dict_out
+
+def usx_to_json(input_usx):
+    '''The core function for the process.
+    input: parsed XML element for the whole USX
+    output: dict object as per the JSON schema'''
+    output_json = convert_usx(input_usx)
+    output_json['type'] = SPEC_NAME
+    output_json['version'] = VERSION_NUM
+    return output_json
 
 def main():
     '''Handles the command line requests.
@@ -51,7 +63,6 @@ def main():
         raise Exception("Input file path or the USX file seems not valid!") from exe
 
     output_json = usx_to_json(input_usx.getroot())
-
     json_str = json.dumps(output_json, indent=2)
     if outpath == 'STDOUT':
         print(json_str)
