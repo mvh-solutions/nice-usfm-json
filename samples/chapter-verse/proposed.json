@@ -1,7 +1,7 @@
 {
   "type": "JOUST",
   "version": "0.0.1-alpha.1",
-  "children": [
+  "content": [
     {
       "type": "book:id",
       "code": "MAT",
@@ -14,12 +14,12 @@
     },
     {
       "type": "para:cl",
-      "children": [
+      "content": [
         "Matthew",
         {
           "type": "char:ca",
           "status": "invalid",
-          "children": [
+          "content": [
             "2"
           ]
         }
@@ -27,31 +27,31 @@
     },
     {
       "type": "para:cp",
-      "children": [
+      "content": [
         "M"
       ]
     },
     {
       "type": "para:cd",
-      "children": [
+      "content": [
         "Additional deacription about the chapter"
       ]
     },
     {
       "type": "para:s1",
-      "children": [
+      "content": [
         "The Ancestors of Jesus Christ"
       ]
     },
     {
       "type": "para:r",
-      "children": [
+      "content": [
         "(Luke 3.23-38)"
       ]
     },
     {
       "type": "para:p",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "1",
@@ -59,13 +59,13 @@
         },
         {
           "type": "char:va",
-          "children": [
+          "content": [
             "3"
           ]
         },
         {
           "type": "char:vp",
-          "children": [
+          "content": [
             "1b"
           ]
         },
@@ -79,7 +79,7 @@
     },
     {
       "type": "para:p",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "1",
@@ -96,13 +96,13 @@
     },
     {
       "type": "para:iex",
-      "children": [
+      "content": [
         "Written to the Romans from Corinthus, and sent by Phebe servant of the church at Cenchrea."
       ]
     },
     {
       "type": "para:p",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "3",

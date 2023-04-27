@@ -34,7 +34,7 @@ def convert_usx(input_usx_elmt):
                 out_obj = [out_obj]
                 out_obj.append({
                     "type": f"char:{key[-1]}a",
-                    "children": [out_obj[0]['altnumber']]
+                    "content": [out_obj[0]['altnumber']]
                     })
                 del out_obj[0]['altnumber']
                 action = "merge"
@@ -43,27 +43,27 @@ def convert_usx(input_usx_elmt):
                     out_obj = [out_obj]
                 out_obj.append({
                     "type": f"para:{key[-1]}p",
-                    "children": [out_obj[0]['pubnumber']]
+                    "content": [out_obj[0]['pubnumber']]
                     })
                 del out_obj[0]['pubnumber']
                 action = "merge"
     else:
-        out_obj['children'] = []
+        out_obj['content'] = []
         if text:
-            out_obj['children'].append(text)
+            out_obj['content'].append(text)
         for child in children:
             child_dict, what_to_do = convert_usx(child)
             match what_to_do:
                 case "append":
-                    out_obj['children'].append(child_dict)
+                    out_obj['content'].append(child_dict)
                 case "merge":
-                    out_obj['children'] += child_dict
+                    out_obj['content'] += child_dict
                 case "ignore":
                     pass
                 case _:
                     pass
             if child.tail and child.tail.strip() != "":
-                out_obj['children'].append(child.tail)
+                out_obj['content'].append(child.tail)
     if "eid" in out_obj:
         action = "ignore"
     return out_obj, action

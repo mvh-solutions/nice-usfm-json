@@ -1,7 +1,7 @@
 {
   "type": "JOUST",
   "version": "0.0.1-alpha.1",
-  "children": [
+  "content": [
     {
       "type": "book:id",
       "code": "MRK",
@@ -21,28 +21,28 @@
     },
     {
       "type": "para:mt2",
-      "children": [
+      "content": [
         "The Gospel according to"
       ]
     },
     {
       "type": "para:mt1",
-      "children": [
+      "content": [
         "MARK"
       ]
     },
     {
       "type": "para:is",
-      "children": [
+      "content": [
         "Introduction"
       ]
     },
     {
       "type": "para:ip",
-      "children": [
+      "content": [
         {
           "type": "char:bk",
-          "children": [
+          "content": [
             "The Gospel according to Mark"
           ]
         },
@@ -56,7 +56,7 @@
     },
     {
       "type": "para:p",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "1",

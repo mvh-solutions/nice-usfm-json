@@ -1,7 +1,7 @@
 {
   "type": "JOUST",
   "version": "0.0.1-alpha.1",
-  "children": [
+  "content": [
     {
       "type": "book:id",
       "code": "GEN"
@@ -13,7 +13,7 @@
     },
     {
       "type": "para:p",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "1",
@@ -29,7 +29,7 @@
         {
           "type": "char:w",
           "x-myattr": "metadata",
-          "children": [
+          "content": [
             "gracious"
           ]
         }
@@ -38,32 +38,32 @@
     {
       "type": "para:q1",
       "vid": "GEN 1:2",
-      "children": [
+      "content": [
         "\u201cSomeone is shouting in the desert,"
       ]
     },
     {
       "type": "para:q2",
       "vid": "GEN 1:2",
-      "children": [
+      "content": [
         "\u2018Prepare a road for the Lord;"
       ]
     },
     {
       "type": "para:q2",
       "vid": "GEN 1:2",
-      "children": [
+      "content": [
         "make a straight path for him to travel!\u2019 \u201d"
       ]
     },
     {
       "type": "para:s",
       "vid": "GEN 1:2",
-      "children": [
+      "content": [
         {
           "type": "char:jmp",
           "link-id": "article-john_the_baptist",
-          "children": []
+          "content": []
         },
         "John the Baptist"
       ]
@@ -71,7 +71,7 @@
     {
       "type": "para:p",
       "vid": "GEN 1:2",
-      "children": [
+      "content": [
         "John is sometimes called..."
       ]
     }

@@ -1,7 +1,7 @@
 {
   "type": "JOUST",
   "version": "0.0.1-alpha.1",
-  "children": [
+  "content": [
     {
       "type": "book:id",
       "code": "MAT"
@@ -13,7 +13,7 @@
     },
     {
       "type": "para:p",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "1",
@@ -35,25 +35,25 @@
         {
           "type": "note:f",
           "caller": "+",
-          "children": [
+          "content": [
             {
               "type": "char:fr",
               "closed": "false",
-              "children": [
+              "content": [
                 "1.1:"
               ]
             },
             {
               "type": "char:ft",
               "closed": "false",
-              "children": [
+              "content": [
                 "Some manuscripts do not have"
               ]
             },
             {
               "type": "char:fq",
               "closed": "false",
-              "children": [
+              "content": [
                 "the Son of God."
               ]
             }

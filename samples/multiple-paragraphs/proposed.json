@@ -1,7 +1,7 @@
 {
   "type": "JOUST",
   "version": "0.0.1-alpha.1",
-  "children": [
+  "content": [
     {
       "type": "book:id",
       "code": "JHN"
@@ -13,19 +13,19 @@
     },
     {
       "type": "para:s1",
-      "children": [
+      "content": [
         "The Preaching of John the Baptist"
       ]
     },
     {
       "type": "para:r",
-      "children": [
+      "content": [
         "(Matthew 3.1-12; Luke 3.1-18; John 1.19-28)"
       ]
     },
     {
       "type": "para:p",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "1",
@@ -43,20 +43,20 @@
     {
       "type": "para:q1",
       "vid": "JHN 1:2",
-      "children": [
+      "content": [
         "\u201cGod said, \u2018I will send my messenger ahead of you"
       ]
     },
     {
       "type": "para:q2",
       "vid": "JHN 1:2",
-      "children": [
+      "content": [
         "to open the way for you.\u2019"
       ]
     },
     {
       "type": "para:q1",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "3",
@@ -68,20 +68,20 @@
     {
       "type": "para:q2",
       "vid": "JHN 1:3",
-      "children": [
+      "content": [
         "\u2018Get the road ready for the Lord;"
       ]
     },
     {
       "type": "para:q2",
       "vid": "JHN 1:3",
-      "children": [
+      "content": [
         "make a straight path for him to travel!\u2019\u201d"
       ]
     },
     {
       "type": "para:p",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "4",

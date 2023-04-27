@@ -1,7 +1,7 @@
 {
   "type": "JOUST",
   "version": "0.0.1-alpha.1",
-  "children": [
+  "content": [
     {
       "type": "book:id",
       "code": "MAT"
@@ -13,7 +13,7 @@
     },
     {
       "type": "para:p",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "1",
@@ -34,18 +34,18 @@
         {
           "type": "note:x",
           "caller": "-",
-          "children": [
+          "content": [
             {
               "type": "char:xo",
               "closed": "false",
-              "children": [
+              "content": [
                 "2.23:"
               ]
             },
             {
               "type": "char:xt",
               "closed": "false",
-              "children": [
+              "content": [
                 "Mrk 1.24; Luk 2.39; Jhn 1.45."
               ]
             }

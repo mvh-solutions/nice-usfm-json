@@ -1,7 +1,7 @@
 {
   "type": "JOUST",
   "version": "0.0.1-alpha.1",
-  "children": [
+  "content": [
     {
       "type": "book:id",
       "code": "GEN"
@@ -13,7 +13,7 @@
     },
     {
       "type": "para:p",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "1",
@@ -30,7 +30,7 @@
     },
     {
       "type": "para:p",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "12-83",
@@ -41,28 +41,28 @@
     },
     {
       "type": "table",
-      "children": [
+      "content": [
         {
           "type": "row:tr",
-          "children": [
+          "content": [
             {
               "type": "cell:th1",
               "align": "start",
-              "children": [
+              "content": [
                 "Day"
               ]
             },
             {
               "type": "cell:th2",
               "align": "start",
-              "children": [
+              "content": [
                 "Tribe"
               ]
             },
             {
               "type": "cell:th3",
               "align": "start",
-              "children": [
+              "content": [
                 "Leader"
               ]
             }
@@ -70,25 +70,25 @@
         },
         {
           "type": "row:tr",
-          "children": [
+          "content": [
             {
               "type": "cell:tcr1",
               "align": "end",
-              "children": [
+              "content": [
                 "1st"
               ]
             },
             {
               "type": "cell:tc2",
               "align": "start",
-              "children": [
+              "content": [
                 "Judah"
               ]
             },
             {
               "type": "cell:tc3",
               "align": "start",
-              "children": [
+              "content": [
                 "Nahshon son of Amminadab"
               ]
             }
@@ -96,25 +96,25 @@
         },
         {
           "type": "row:tr",
-          "children": [
+          "content": [
             {
               "type": "cell:tcr1",
               "align": "end",
-              "children": [
+              "content": [
                 "2nd"
               ]
             },
             {
               "type": "cell:tc2",
               "align": "start",
-              "children": [
+              "content": [
                 "Issachar"
               ]
             },
             {
               "type": "cell:tc3",
               "align": "start",
-              "children": [
+              "content": [
                 "Nethanel son of Zuar"
               ]
             }
@@ -122,25 +122,25 @@
         },
         {
           "type": "row:tr",
-          "children": [
+          "content": [
             {
               "type": "cell:tcr1",
               "align": "end",
-              "children": [
+              "content": [
                 "3rd"
               ]
             },
             {
               "type": "cell:tc2",
               "align": "start",
-              "children": [
+              "content": [
                 "Zebulun"
               ]
             },
             {
               "type": "cell:tc3",
               "align": "start",
-              "children": [
+              "content": [
                 "Eliab son of Helon"
               ]
             }

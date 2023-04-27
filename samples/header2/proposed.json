@@ -1,7 +1,7 @@
 {
   "type": "JOUST",
   "version": "0.0.1-alpha.1",
-  "children": [
+  "content": [
     {
       "type": "book:id",
       "code": "MRK",
@@ -21,29 +21,29 @@
     },
     {
       "type": "para:mt2",
-      "children": [
+      "content": [
         "The Gospel"
       ]
     },
     {
       "type": "para:mt3",
-      "children": [
+      "content": [
         "according to"
       ]
     },
     {
       "type": "para:mt1",
-      "children": [
+      "content": [
         "JOHN"
       ]
     },
     {
       "type": "para:ip",
-      "children": [
+      "content": [
         "The two endings to the Gospel, which are enclosed in brackets, are regarded as written by someone other than the author of",
         {
           "type": "char:bk",
-          "children": [
+          "content": [
             "Mark"
           ]
         }
@@ -51,17 +51,17 @@
     },
     {
       "type": "para:iot",
-      "children": [
+      "content": [
         "Outline of Contents"
       ]
     },
     {
       "type": "para:io1",
-      "children": [
+      "content": [
         "The beginning of the gospel",
         {
           "type": "char:ior",
-          "children": [
+          "content": [
             "(1.1-13)"
           ]
         }
@@ -69,11 +69,11 @@
     },
     {
       "type": "para:io1",
-      "children": [
+      "content": [
         "Jesus' public ministry in Galilee",
         {
           "type": "char:ior",
-          "children": [
+          "content": [
             "(1.14\u20139.50)"
           ]
         }
@@ -81,11 +81,11 @@
     },
     {
       "type": "para:io1",
-      "children": [
+      "content": [
         "From Galilee to Jerusalem",
         {
           "type": "char:ior",
-          "children": [
+          "content": [
             "(10.1-52)"
           ]
         }
@@ -98,19 +98,19 @@
     },
     {
       "type": "para:ms",
-      "children": [
+      "content": [
         "BOOK ONE"
       ]
     },
     {
       "type": "para:mr",
-      "children": [
+      "content": [
         "(Psalms 1\u201341)"
       ]
     },
     {
       "type": "para:p",
-      "children": [
+      "content": [
         {
           "type": "verse:v",
           "number": "1",
