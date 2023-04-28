@@ -1,0 +1,79 @@
+{
+  "type": "JOUST",
+  "version": "0.0.1-alpha.1",
+  "content": [
+    {
+      "type": "book:id",
+      "code": "GEN"
+    },
+    {
+      "type": "chapter:c",
+      "number": "1",
+      "sid": "GEN 1"
+    },
+    {
+      "type": "para:p",
+      "content": [
+        {
+          "type": "verse:v",
+          "number": "1",
+          "sid": "GEN 1:1"
+        },
+        "the first verse ",
+        {
+          "type": "verse:v",
+          "number": "2",
+          "sid": "GEN 1:2"
+        },
+        "the second verse ",
+        {
+          "type": "char:w",
+          "x-myattr": "metadata",
+          "content": [
+            "gracious"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "para:q1",
+      "vid": "GEN 1:2",
+      "content": [
+        "\u201cSomeone is shouting in the desert,"
+      ]
+    },
+    {
+      "type": "para:q2",
+      "vid": "GEN 1:2",
+      "content": [
+        "\u2018Prepare a road for the Lord;"
+      ]
+    },
+    {
+      "type": "para:q2",
+      "vid": "GEN 1:2",
+      "content": [
+        "make a straight path for him to travel!\u2019 \u201d"
+      ]
+    },
+    {
+      "type": "para:s",
+      "vid": "GEN 1:2",
+      "content": [
+        {
+          "type": "char:jmp",
+          "link-id": "article-john_the_baptist",
+          "content": []
+        },
+        "John the Baptist"
+      ]
+    },
+    {
+      "type": "para:p",
+      "vid": "GEN 1:2",
+      "content": [
+        "John is sometimes called..."
+      ]
+    }
+  ]
+}
