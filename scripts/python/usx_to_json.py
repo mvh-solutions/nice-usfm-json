@@ -64,7 +64,7 @@ def convert_usx(input_usx_elmt):
                     pass
             if child.tail and child.tail.strip() != "":
                 out_obj['content'].append(child.tail)
-    if "eid" in out_obj:
+    if "eid" in out_obj and input_usx_elmt.tag in ['verse', 'chapter']:
         action = "ignore"
     return out_obj, action
 

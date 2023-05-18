@@ -37,7 +37,12 @@
           "who": "Pilate",
           "content": []
         },
-        "\u201cAre you the king of the Jews?\u201d "
+        "\u201cAre you the king of the Jews?\u201d ",
+        {
+          "type": "ms:qt-e",
+          "eid": "qt_123",
+          "content": []
+        }
       ]
     }
   ]
