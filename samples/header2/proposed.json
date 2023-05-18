@@ -1,23 +1,31 @@
 {
-  "type": "JOUST",
-  "version": "0.0.1-alpha.1",
+  "type": "USJ",
+  "version": "0.0.1-alpha.2",
   "content": [
     {
       "type": "book:id",
       "code": "MRK",
-      "text": "41MRKGNT92.SFM, Good News Translation, June 2003"
+      "content": [
+        "41MRKGNT92.SFM, Good News Translation, June 2003"
+      ]
     },
     {
       "type": "para:h",
-      "text": "John"
+      "content": [
+        "John"
+      ]
     },
     {
       "type": "para:toc1",
-      "text": "The Gospel according to John"
+      "content": [
+        "The Gospel according to John"
+      ]
     },
     {
       "type": "para:toc2",
-      "text": "John"
+      "content": [
+        "John"
+      ]
     },
     {
       "type": "para:mt2",

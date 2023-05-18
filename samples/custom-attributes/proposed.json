@@ -1,6 +1,6 @@
 {
-  "type": "JOUST",
-  "version": "0.0.1-alpha.1",
+  "type": "USJ",
+  "version": "0.0.1-alpha.2",
   "content": [
     {
       "type": "book:id",
@@ -62,8 +62,7 @@
       "content": [
         {
           "type": "char:jmp",
-          "link-id": "article-john_the_baptist",
-          "content": []
+          "link-id": "article-john_the_baptist"
         },
         "John the Baptist"
       ]

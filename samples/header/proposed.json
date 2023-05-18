@@ -1,23 +1,31 @@
 {
-  "type": "JOUST",
-  "version": "0.0.1-alpha.1",
+  "type": "USJ",
+  "version": "0.0.1-alpha.2",
   "content": [
     {
       "type": "book:id",
       "code": "MRK",
-      "text": "The Gospel of Mark"
+      "content": [
+        "The Gospel of Mark"
+      ]
     },
     {
       "type": "para:ide",
-      "text": "UTF-8"
+      "content": [
+        "UTF-8"
+      ]
     },
     {
       "type": "para:usfm",
-      "text": "3.0"
+      "content": [
+        "3.0"
+      ]
     },
     {
       "type": "para:h",
-      "text": "Mark"
+      "content": [
+        "Mark"
+      ]
     },
     {
       "type": "para:mt2",
