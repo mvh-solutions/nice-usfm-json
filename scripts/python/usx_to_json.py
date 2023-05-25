@@ -2,13 +2,8 @@ import argparse
 import json
 from lxml import etree
 
-VERSION_NUM = "0.0.1-alpha.1"
-SPEC_NAME = "JOUST" # for Javascript Objects for USFM Syntax Trees
-
-
-NO_NESTING = ["book:id", "chapter:c", "verse:v", "para:ide", "para:h1", "para:h2", "para:h3",
-            "para:h", "para:toc1", "para:toc2", "para:toc3", "para:toca1", "para:toca2",
-            "para:toca3", "para:usfm", "figure:fig"]
+VERSION_NUM = "0.0.1-alpha.2"
+SPEC_NAME = "USJ" # for Javascript Objects for USFM Syntax Trees
 
 def convert_usx(input_usx_elmt):
     '''Accepts an XML object of USX and returns a Dict corresponding to it.
@@ -25,47 +20,45 @@ def convert_usx(input_usx_elmt):
     out_obj =  out_obj | attribs
     if input_usx_elmt.text and input_usx_elmt.text.strip() != "":
         text = input_usx_elmt.text.strip()
-    children = input_usx_elmt.getchildren() 
-    if key in NO_NESTING:
-        if text:
-            out_obj['text'] = text
-        if key in ["chapter:c", "verse:v"]:
-            if "altnumber" in out_obj:
-                out_obj = [out_obj]
-                out_obj.append({
-                    "type": f"char:{key[-1]}a",
-                    "content": [out_obj[0]['altnumber']]
-                    })
-                del out_obj[0]['altnumber']
-                action = "merge"
-            if "pubnumber" in out_obj:
-                if not isinstance(out_obj, list):
-                    out_obj = [out_obj]
-                out_obj.append({
-                    "type": f"para:{key[-1]}p",
-                    "content": [out_obj[0]['pubnumber']]
-                    })
-                del out_obj[0]['pubnumber']
-                action = "merge"
-    else:
-        out_obj['content'] = []
-        if text:
-            out_obj['content'].append(text)
-        for child in children:
-            child_dict, what_to_do = convert_usx(child)
-            match what_to_do:
-                case "append":
-                    out_obj['content'].append(child_dict)
-                case "merge":
-                    out_obj['content'] += child_dict
-                case "ignore":
-                    pass
-                case _:
-                    pass
-            if child.tail and child.tail.strip() != "":
-                out_obj['content'].append(child.tail)
-    if "eid" in out_obj:
+    children = input_usx_elmt.getchildren()
+    out_obj['content'] = []
+    if text:
+        out_obj['content'].append(text)
+    for child in children:
+        child_dict, what_to_do = convert_usx(child)
+        match what_to_do:
+            case "append":
+                out_obj['content'].append(child_dict)
+            case "merge":
+                out_obj['content'] += child_dict
+            case "ignore":
+                pass
+            case _:
+                pass
+        if child.tail and child.tail.strip() != "":
+            out_obj['content'].append(child.tail)
+    if out_obj['content'] == []:
+        del out_obj['content']
+    if "eid" in out_obj and input_usx_elmt.tag in ['verse', 'chapter']:
         action = "ignore"
+    if key in ["chapter:c", "verse:v"]:
+        if "altnumber" in out_obj:
+            out_obj = [out_obj]
+            out_obj.append({
+                "type": f"char:{key[-1]}a",
+                "content": [out_obj[0]['altnumber']]
+                })
+            del out_obj[0]['altnumber']
+            action = "merge"
+        if "pubnumber" in out_obj:
+            if not isinstance(out_obj, list):
+                out_obj = [out_obj]
+            out_obj.append({
+                "type": f"para:{key[-1]}p",
+                "content": [out_obj[0]['pubnumber']]
+                })
+            del out_obj[0]['pubnumber']
+            action = "merge"
     return out_obj, action
 
 def usx_to_json(input_usx):
