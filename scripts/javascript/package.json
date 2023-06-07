@@ -1,0 +1,32 @@
+{
+  "name": "usx-to-usj",
+  "version": "1.0.0",
+  "description": "A standalone script to convert scripture in USX(xml) format to USJ(json).",
+  "main": "usx-to-usj.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvh-solutions/nice-usfm-json.git"
+  },
+  "keywords": [
+    "USFM",
+    "USJ",
+    "XML",
+    "JSON",
+    "Scripture",
+    "format",
+    "Bible"
+  ],
+  "author": "Kavitha Raju",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mvh-solutions/nice-usfm-json/issues"
+  },
+  "homepage": "https://github.com/mvh-solutions/nice-usfm-json#readme",
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "xmldom": "^0.6.0"
+  }
+}
