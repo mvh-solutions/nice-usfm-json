@@ -1,6 +1,3 @@
-const { ArgumentParser } = require('argparse');
-const path = require('path');
-const fse = require('fs-extra');
 const { DOMParser } = require('xmldom');
 
 const VERSION_NUM = '0.0.1-alpha.2';
@@ -97,51 +94,17 @@ function usxDomToJson1(inputUsxElement) {
   return [outObj, action];
 }
 
-function usxDomToJson(input_usx_dom) {
-  let [outputJson, _] = usxDomToJson1(input_usx_dom);
+function usxDomToJson(inputUsxDom) {
+  let [outputJson, _] = usxDomToJson1(inputUsxDom);
   outputJson['type'] = SPEC_NAME;
   outputJson['version'] = VERSION_NUM;
   return outputJson;
 }
 
-function main() {
-  let argParser = new ArgumentParser({
-    description: 'Takes in a USX file and converts it into JSON',
-  });
-
-  argParser.add_argument('infile', {
-    type: String,
-    help: 'input USX(.xml) file',
-  });
-
-  argParser.add_argument('--output_path', {
-    type: String,
-    help: 'path to write the output file to',
-    default: 'STDOUT',
-  });
-
-  let args = argParser.parse_args();
-  let inFile = path.resolve(args.infile);
-  let outPath = args.output_path === 'STDOUT' ? 'STDOUT' : path.resolve(args.output_path);
-
-  try {
-    let usxData = fse.readFileSync(inFile, 'utf-8');
+function usxStringToJson(inputUsx) {
     let parser = new DOMParser();
-    let inputUsx = parser.parseFromString(usxData, 'text/xml');
-    let outputJson = usxDomToJson(inputUsx.documentElement);
-    let jsonStr = JSON.stringify(outputJson, null, 2);
-
-    if (outPath === 'STDOUT') {
-      console.log(jsonStr);
-    } else {
-      fse.writeFileSync(outPath, jsonStr, 'utf-8');
-    }
-  } catch (error) {
-    console.error('An error occurred:', error.message);
-  }
+    let inputUsxDom = parser.parseFromString(usxData, 'text/xml');
+    return usxDomToJson(inputUsxDom.documentElement);
 }
 
-if (require.main === module) {
-  main();
-}
-
+module.exports = { usxDomToJson, usxStringToJson }
