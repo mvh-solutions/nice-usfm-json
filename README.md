@@ -14,7 +14,7 @@ git clone https://github.com/mvh-solutions/nice-usfm-json.git
 
 Set up a virtual environment
 ```
-cd nice-usfm-json/scripts/python
+cd nice-usfm-json/python
 python3 -n venv ENV
 source ENV/bin/activate
 pip install -r requirements.txt
@@ -25,7 +25,7 @@ Run the converter
 ```
 python usx_to_json.py <file_path>
 ```
-> Example: python usx_to_json.js ../../samples/chapter-verse/origin.xml
+> Example: python usx_to_json.js ../samples/chapter-verse/origin.xml
 
 ```
 usage: usx_to_json.py [-h] [--output_path OUTPUT_PATH] infile
@@ -46,11 +46,12 @@ options:
 Install dependencies
 
 ```
-cd nice-usfm-json/scripts/javascript
+cd nice-usfm-json/javascript
 npm install .
 ```
 Run the converter
 ```
+cd scripts
 node usx-to-usj.js <filepath>
 ```
 > Example: node usx-to-usj.js ../../samples/chapter-verse/origin.xml
