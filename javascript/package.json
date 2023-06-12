@@ -2,7 +2,7 @@
   "name": "usx-to-usj",
   "version": "1.0.0",
   "description": "A standalone script to convert scripture in USX(xml) format to USJ(json).",
-  "main": "usx-to-usj.js",
+  "main": "scripts/usx-to-usj.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -101,9 +101,9 @@ function usxDomToJson(inputUsxDom) {
   return outputJson;
 }
 
-function usxStringToJson(inputUsx) {
+function usxStringToJson(usxString) {
     let parser = new DOMParser();
-    let inputUsxDom = parser.parseFromString(usxData, 'text/xml');
+    let inputUsxDom = parser.parseFromString(usxString, 'text/xml');
     return usxDomToJson(inputUsxDom.documentElement);
 }
 
